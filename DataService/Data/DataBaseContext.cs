@@ -11,5 +11,7 @@ namespace DataService.Data
 
         public DbSet<Employee> Employees { get; set; }
 
+        public DbSet<EmployeeLogin> EmployeeLogin { get; set; }
+
     }
 }

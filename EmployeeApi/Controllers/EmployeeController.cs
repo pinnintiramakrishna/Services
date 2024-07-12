@@ -2,9 +2,12 @@
 using Microsoft.AspNetCore.Mvc;
 using DataService.Models;
 using EmployeeApi.Services;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
 
 namespace EmployeeApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class EmployeeController : ControllerBase
